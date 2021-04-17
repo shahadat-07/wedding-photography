@@ -1,0 +1,11 @@
+.heroNav{
+    background-color: #00AEAF;
+    height: 100px;
+}
+a.nav-link {
+    color: white!important;
+}
+a {
+    color: white;
+    text-decoration: none;
+}

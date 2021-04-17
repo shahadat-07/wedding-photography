@@ -1,0 +1,10 @@
+.sidebar li{
+    list-style: none;
+    padding: 15px;
+    color: black;
+}
+.sidebar{
+    background-color: cyan;
+    width: 250px;
+}
+
