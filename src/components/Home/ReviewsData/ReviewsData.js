@@ -2,7 +2,7 @@ import React from 'react';
 
 const ReviewsData = ({ review }) => {
     return (
-        <div className="col-md-4 mb-5 pb-5">
+        <div className="col-md-4 col-sm-6 mb-5 pb-5">
             <ul class="hash-list cols-3 cols-1-xs pad-30-all align-center text-sm">
                 <li>
                     {

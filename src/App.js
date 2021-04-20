@@ -13,41 +13,48 @@ import AddService from './components/Dashboard/AddService/AddService';
 import MakeAdmin from './components/Dashboard/MakeAdmin/MakeAdmin';
 import ManageService from './components/Dashboard/ManageService/ManageService';
 import AddReview from './components/Dashboard/AddReview/AddReview';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import CheckOut from './components/CheckOut/CheckOut';
+
 
 export const UserContext = createContext();
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
+  console.log(loggedInUser);
   return (
-    <UserContext.Provider value = {[loggedInUser,setLoggedInUser]}>
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
         <Switch>
           <Route path="/home">
-            <Home/>
+            <Home />
           </Route>
           <Route path="/login">
             <Login />
           </Route>
           <Route path="/dashboard">
-            <Dashboard/>
+            <Dashboard />
           </Route>
           <Route path="/orderList">
-            <OrderList/>
+            <OrderList />
           </Route>
           <Route path="/addService">
-            <AddService/>
+            <AddService />
           </Route>
           <Route path="/addReview">
-            <AddReview/>
+            <AddReview />
           </Route>
-          <Route path="/admin">
-            <AddReview/>
-          </Route>
+          <PrivateRoute path="/admin">
+            <Dashboard />
+          </PrivateRoute>
           <Route path="/makeAdmin">
-            <MakeAdmin/>
+            <MakeAdmin />
           </Route>
           <Route path="/manageService">
-            <ManageService/>
+            <ManageService />
+          </Route>
+          <Route path="/checkout/:id">
+            <CheckOut/>
           </Route>
           <Route exact path="/">
             <Home />

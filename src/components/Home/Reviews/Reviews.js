@@ -9,7 +9,7 @@ const Reviews = () => {
     const [reviewsData,setReviewsData] = useState([]);
 
     useEffect(() =>{
-        fetch('http://localhost:5055/reviews')
+        fetch('https://aqueous-beach-55232.herokuapp.com/reviews')
         .then(res => res.json())
         .then(data => {
             setReviewsData(data);
@@ -19,7 +19,7 @@ const Reviews = () => {
 
 
     // const handleAddProduct = () =>{
-    //     fetch('http://localhost:5055/addProduct',{
+    //     fetch('https://aqueous-beach-55232.herokuapp.com/addProduct',{
     //         method : 'POST',
     //         headers : {'Content-Type' : 'application/json'},
     //         body : JSON.stringify(fakeReviews[2])

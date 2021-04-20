@@ -25,7 +25,7 @@ const AddReview = () => {
         formData.append('price',info.description);
         formData.append('address',info.date);
 
-        fetch('http://localhost:5055/addReview', {
+        fetch('https://aqueous-beach-55232.herokuapp.com/addReview', {
             method: 'POST',
             body: formData
         })

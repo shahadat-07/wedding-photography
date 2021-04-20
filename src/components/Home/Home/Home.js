@@ -5,6 +5,7 @@ import Reviews from '../Reviews/Reviews';
 import ServiceFeature from '../ServiceFeature/ServiceFeature';
 import WeddingLocation from '../WeddingLocation/WeddingLocation';
 import WeddingPlan from '../WeddingPlan/WeddingPlan';
+import Footer from '../../Footer/Footer';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <ServiceFeature></ServiceFeature>
             <WeddingLocation></WeddingLocation>
             <Reviews></Reviews>
+            <Footer></Footer>
         </main>
     );
 };

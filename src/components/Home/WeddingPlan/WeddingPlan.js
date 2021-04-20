@@ -3,17 +3,14 @@ import WeddingPlanData from '../WeddingPlanData/WeddingPlanData';
 
 const weddingData = [
     {
-        icon: '',
         title: 'Find local vendor',
         description: 'Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.'
     },
     {
-        icon: '',
         title: 'Contact vendor',
         description: 'Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.'
     },
     {
-        icon: '',
         title: 'Save Your Date',
         description: 'Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.'
     }

@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Sidebar from '../Sidebar/Sidebar';
+import { UserContext } from '../../../App';
+
 
 const Admin = () => {
+    const [loggedInUser,setLoggedInUser] = useContext(UserContext);
+    console.log(loggedInUser);
+
     return (
         <section>
             <div className="container-fluid row">

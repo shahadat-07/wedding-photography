@@ -24,7 +24,7 @@ const AddService = () => {
         formData.append('price',info.price);
         formData.append('address',info.address);
 
-        fetch('http://localhost:5055/addService', {
+        fetch('https://aqueous-beach-55232.herokuapp.com/addService', {
             method: 'POST',
             body: formData
         })

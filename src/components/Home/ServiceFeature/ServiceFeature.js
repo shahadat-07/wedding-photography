@@ -8,7 +8,7 @@ const ServiceFeature = () => {
     const [serviceData,setServiceData] = useState([]);
 
     useEffect(() =>{
-        fetch(`http://localhost:5055/services`)
+        fetch(`https://aqueous-beach-55232.herokuapp.com/services`)
         .then(res => res.json())
         .then(data => {
             setServiceData(data);
@@ -19,7 +19,7 @@ const ServiceFeature = () => {
 
 
     // const handleAddProduct = () =>{
-    //     fetch('http://localhost:5055/addProduct',{
+    //     fetch('https://aqueous-beach-55232.herokuapp.com/addProduct',{
     //         method : 'POST',
     //         headers : {'Content-Type' : 'application/json'},
     //         body : JSON.stringify(fakeServices[2])

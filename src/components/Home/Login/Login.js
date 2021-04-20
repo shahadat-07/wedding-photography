@@ -3,6 +3,7 @@ import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from "./firebase.config";
 import { UserContext } from '../../../App';
+import { useHistory, useLocation } from 'react-router';
 
 
 if (!firebase.apps.length) {
@@ -11,6 +12,10 @@ if (!firebase.apps.length) {
 
 const Login = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    let history = useHistory();
+    let location = useLocation();
+  
+    const { from } = location.state || { from: { pathname: "/" } };
 
     const handleGoogleSignIn = () => {
         const provider = new firebase.auth.GoogleAuthProvider();
@@ -19,6 +24,8 @@ const Login = () => {
                 const { email, displayName } = result.user;
                 const signedInInfo = { email, displayName };
                 setLoggedInUser(signedInInfo);
+                history.replace(from);
+
             })
             .catch((error) => {
                 var errorCode = error.code;
