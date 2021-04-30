@@ -1,8 +1,5 @@
 # Wedding Photography
 
-## Live Site 
-https://wedding-photography-bfe88.web.app/
-
 ## Technology
 JavaScript, React JS, node JS, Express JS, React-Router, Private Route, mongo db,
 Firebase authentication, Heroku
